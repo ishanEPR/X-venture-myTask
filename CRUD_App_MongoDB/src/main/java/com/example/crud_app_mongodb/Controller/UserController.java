@@ -59,7 +59,7 @@ public class UserController {
         return userService.editUser(id,user);
     }
 
-    //delete user
+   // delete user
     @DeleteMapping("/users/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable String id)
     {

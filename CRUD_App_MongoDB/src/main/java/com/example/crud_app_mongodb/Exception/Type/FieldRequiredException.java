@@ -6,4 +6,8 @@ public class FieldRequiredException extends RuntimeException{
         super(message);
 
     }
+
+    public FieldRequiredException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

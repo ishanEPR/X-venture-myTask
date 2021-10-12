@@ -1,19 +1,19 @@
-package com.example.crud_app_mongodb.Exception;
+package com.example.crud_app_mongodb.Exception.ENUM;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 import java.time.ZonedDateTime;
 
+
 @Data
 @AllArgsConstructor
-public class ApiExceptionModel {
+public class EnumModel {
 
     private final String message;
-//    private final String errorCode;
-  //  private final Throwable throwable;
     private final HttpStatus httpStatus;
-//    private final ZonedDateTime zonedDateTime;
+    private final ZonedDateTime dateTime;
 
 }
